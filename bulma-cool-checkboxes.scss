@@ -10,7 +10,8 @@
 
 */
 $fontawesome-font-family: 'Font Awesome 5 Free' !default;
-@import 'bulma/sass/utilities/all';
+@import 'bulma/sass/utilities/initial-variables';
+@import 'bulma/sass/utilities/derived-variables';
 
 .b-checkbox {
   position: relative;

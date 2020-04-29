@@ -1,6 +1,6 @@
 {
   "name": "@cityssm/bulma-cool-checkboxes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "100% CSS based checkboxes for Bulma.io",
   "main": "bulma-cool-checkboxes.min.css",
   "scripts": {
