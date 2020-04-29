@@ -1,19 +1,35 @@
-# Cool Checkboxes for Bulma.io
+# bulma-cool-checkboxes
+
 100% CSS based checkbox for <a href="http://bulma.io" target="_blank">Bulma.io</a>
+
+Based on the work of Aslam Shah,
+[hunzaboy/Cool-Checkboxes-for-Bulma.io](https://github.com/hunzaboy/Cool-Checkboxes-for-Bulma.io), with the following changes.
+
+- Converted from CSS to SCSS.
+- Using Bulma colour variables for easier customization.
+- Made to work with Font Awesome 5.
+- Removed the `styled` class as it's always used.
+- Removed the `is-circular` class.
+- Removed the `type="radio"` styles.
 
 # How to use
 
-`npm install cool-checkboxes-for-bulma.io`
+`npm install @cityssm/bulma-cool-checkboxes`
 
-or
+To customize the colours in your SCSS,
+import the bulma-cool-checkboxes.scss file **after** Bulma.
 
-Include `bulma-radio-checkbox.css` or `bulma-radio-checkbox.min.css` from `dist/css` folder in your page and you are good to go.
+```scss
+# Set your Bulma variables before importing.
 
-# Demo
-Click here for <a href="https://hunzaboy.github.io/Cool-Checkboxes-for-Bulma.io/">Demo</a>
+@import 'bulma/bulma';
+@import '@cityssm/bulma-cool-checkboxes/bulma-cool-checkboxes';
+```
 
-<hr>
+If no customization is necessary (i.e. vanilla Bulma), just use the CSS.
 
-Check out my new project. You might be interested <a href="https://github.com/hunzaboy/CSS-Checkboxes-Huge-Library">A Huge library of CSS Checkboxes</a>
-
-<img src="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Library/screen.png">
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+<link rel="stylesheet" href="bulma-radio-checkbox.min.css" />
+```
