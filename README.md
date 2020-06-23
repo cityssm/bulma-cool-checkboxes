@@ -23,7 +23,7 @@ To customize the colours in your SCSS,
 import the bulma-cool-checkboxes.scss file **after** Bulma.
 
 ```scss
-# Set your Bulma variables before importing.
+// Set your Bulma variables before importing.
 
 @import 'bulma/bulma';
 @import '@cityssm/bulma-cool-checkboxes/bulma-cool-checkboxes';
