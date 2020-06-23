@@ -9,9 +9,92 @@
    MIT License
 
 */
+
 $fontawesome-font-family: 'Font Awesome 5 Free' !default;
+
 @import 'bulma/sass/utilities/initial-variables';
 @import 'bulma/sass/utilities/derived-variables';
+
+/*
+ * Colors
+ */
+
+input[type='checkbox']:checked + label::before {
+  .b-checkbox.is-primary & {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  .b-checkbox.is-danger & {
+    background-color: $danger;
+    border-color: $danger;
+  }
+
+  .b-checkbox.is-info & {
+    background-color: $info;
+    border-color: $info;
+  }
+
+  .b-checkbox.is-warning & {
+    background-color: $warning;
+    border-color: $warning;
+  }
+
+  .b-checkbox.is-success & {
+    background-color: $success;
+    border-color: $success;
+  }
+
+  .b-checkbox.is-dark & {
+    background-color: $dark;
+    border-color: $dark;
+  }
+
+  .b-checkbox.is-black & {
+    background-color: $black;
+    border-color: $black;
+  }
+}
+
+input[type='checkbox']:checked + label::after {
+  .b-checkbox & {
+    color: $black;
+  }
+
+  .b-checkbox.is-black &,
+  .b-checkbox.is-danger &,
+  .b-checkbox.is-dark &,
+  .b-checkbox.is-info &,
+  .b-checkbox.is-primary &,
+  .b-checkbox.is-success &,
+  .b-checkbox.is-warning & {
+    color: $white;
+  }
+}
+
+/*
+ * Inline styles
+ */
+
+.b-checkbox.is-inline {
+  display: inline-block;
+
+  + .is-inline {
+    margin-left: 10px;
+  }
+
+  label::before {
+    top: 3px;
+  }
+
+  label::after {
+    top: 5px;
+  }
+}
+
+/*
+ * Main styles
+ */
 
 .b-checkbox {
   position: relative;
@@ -72,74 +155,5 @@ $fontawesome-font-family: 'Font Awesome 5 Free' !default;
       cursor: not-allowed;
       background-color: $background;
     }
-  }
-}
-
-.b-checkbox.is-inline {
-  display: inline-block;
-
-  + .is-inline {
-    margin-left: 10px;
-  }
-
-  label::before {
-    top: 3px;
-  }
-
-  label::after {
-    top: 5px;
-  }
-}
-
-input[type='checkbox']:checked + label::before {
-  .b-checkbox.is-primary & {
-    background-color: $primary;
-    border-color: $primary;
-  }
-
-  .b-checkbox.is-danger & {
-    background-color: $danger;
-    border-color: $danger;
-  }
-
-  .b-checkbox.is-info & {
-    background-color: $info;
-    border-color: $info;
-  }
-
-  .b-checkbox.is-warning & {
-    background-color: $warning;
-    border-color: $warning;
-  }
-
-  .b-checkbox.is-success & {
-    background-color: $success;
-    border-color: $success;
-  }
-
-  .b-checkbox.is-dark & {
-    background-color: $dark;
-    border-color: $dark;
-  }
-
-  .b-checkbox.is-black & {
-    background-color: $black;
-    border-color: $black;
-  }
-}
-
-input[type='checkbox']:checked + label::after {
-  .b-checkbox & {
-    color: $black;
-  }
-
-  .b-checkbox.is-black &,
-  .b-checkbox.is-danger &,
-  .b-checkbox.is-dark &,
-  .b-checkbox.is-info &,
-  .b-checkbox.is-primary &,
-  .b-checkbox.is-success &,
-  .b-checkbox.is-warning & {
-    color: $white;
   }
 }
